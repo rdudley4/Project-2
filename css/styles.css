@@ -149,18 +149,15 @@ a,
 
 .contact-info a { margin-left: 1em; }
 
-/* main-footer */
+/* Main-Footer */
 
 .main-footer { border-top: solid 1px #e7e7e7; }
+.footer-name { float: left; }
+.to-top      { float: right; }
+.footer-nav  { display: none; }
 
 .footer-name,
 .to-top { padding: 20px 15px; }
-
-.footer-name { float: left; }
-.to-top { float: right; }
-.footer-nav { display: none; }
-
-
 
 /* --- Media Query (min-width: 400) --- */
 
