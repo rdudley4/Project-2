@@ -27,7 +27,7 @@ a  {
 }
 
 a:hover {
-  color: #3498db;
+  color: #27ae60;
   transition: all .3s ease-out;
 }
 
@@ -48,7 +48,7 @@ h1 {
   padding-right: 1em;
 }
 
-  /* Main Header & Navigation */
+/* Main Header & Navigation */
 
 .main-header {
   margin-top: 20px;
@@ -73,11 +73,7 @@ h1,
 
 a,
 .section-title { text-transform: uppercase; }
-
-.section-title  {
-  /*margin-bottom: 40px;*/
-  font-size: 1em;
-}
+.section-title { font-size: 1em; }
 
 .item-title { margin-top: 0; }
 
@@ -118,6 +114,10 @@ a,
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.skill-container.html5 { color: #e44f26; }
+.skill-container.js    { color: #e5a229; }
+.skill-container.css3  { color: #2162af; }
 
 .skill-container p { margin-bottom: 0; }
 
@@ -233,7 +233,7 @@ a,
   .portfolio-item:nth-of-type(odd)  {
     clear: left; /* clear left of odd items so we don't get spacing issues with paragraphs. */
   }
-  
+
   /* --- Skills hover effects --- */
 
   .skill-container.html5:hover { background-color: #e44f26; }
@@ -284,6 +284,8 @@ a,
 
 
   /* Portfolio Section */
+
+  #section-portfolio .section-title { margin-bottom: 30px; }
 
   .portfolio-item {
     width: 33.3333%;
