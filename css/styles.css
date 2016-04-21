@@ -66,6 +66,7 @@ h1 {
 }
 
 .fa { margin-right: 10px; }
+#section-skills .fa { margin-right: 0; }
 
 h1,
 .section-title  { margin-top: 0; }
@@ -107,6 +108,16 @@ a,
   margin-bottom: .5em;
   margin-right: 0;
 }
+
+/* Skills section */
+
+
+.skill-container {
+  display: inline-block;
+  padding: 2.5% 8%;
+}
+
+.skill-container p { margin-bottom: 0; }
 
 /* contact section */
 
@@ -185,7 +196,8 @@ a,
 
   /* --- Gallery hover effects --- */
 
-  .portfolio-item:hover {
+  .portfolio-item:hover,
+  .skill-container:hover {
     color: #fff;
     box-shadow: 0 0 3px #888888;
     transition: all .2s ease-out;
@@ -204,6 +216,12 @@ a,
   .portfolio-item:nth-of-type(odd)  {
     clear: left; /* clear left of odd items so we don't get spacing issues with paragraphs. */
   }
+
+  /* --- Skills hover effects --- */
+
+  .skill-container.html5:hover { background-color: #e44f26; }
+  .skill-container.css3:hover  { background-color: #2162af; }
+  .skill-container.js:hover    { background-color: #e5a229; }
 
 
   /* Main Footer Section */
