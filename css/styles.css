@@ -153,9 +153,16 @@ a,
   .profile-photo {
     float: right;
     padding-right: 0;
-    padding-left: 3em;
+    margin-left: 3em;
+}
+
+  .about-me {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
   }
-  .about-me { text-align: left; }
+
   .about-me p { max-width: 600px; }
 
 
@@ -219,7 +226,9 @@ a,
 
   h1 {
     float: left;
-    transform: translateY(25%);
+    transform: translateY(50%);
+    font-size: 1.5em;
+    text-transform: uppercase;
   }
 
   .main-nav { float: right; }
