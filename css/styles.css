@@ -75,7 +75,7 @@ a,
 .section-title { text-transform: uppercase; }
 
 .section-title  {
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
   font-size: 1em;
 }
 
@@ -114,7 +114,9 @@ a,
 
 .skill-container {
   display: inline-block;
-  padding: 2.5% 8%;
+  width: 45%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .skill-container p { margin-bottom: 0; }
@@ -123,6 +125,8 @@ a,
   max-width: 1050px;
   margin: 1em auto;
 }
+
+.css3 { margin-top: 0; }
 
 /* contact section */
 
@@ -146,8 +150,14 @@ a,
 
 
 
-/* --- Media Query (min-width: 325) --- */
+/* --- Media Query (min-width: 400) --- */
 
+@media (min-width: 400px) {
+  .skill-container {
+    padding: 2.5% 8%;
+    width: inherit;
+  }
+}
 
 
 /* --- Media Query (min-width: 768) [TABLETS] --- */
@@ -223,7 +233,7 @@ a,
   .portfolio-item:nth-of-type(odd)  {
     clear: left; /* clear left of odd items so we don't get spacing issues with paragraphs. */
   }
-
+  
   /* --- Skills hover effects --- */
 
   .skill-container.html5:hover { background-color: #e44f26; }
