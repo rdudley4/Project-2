@@ -119,6 +119,11 @@ a,
 
 .skill-container p { margin-bottom: 0; }
 
+#section-skills p {
+  max-width: 1050px;
+  margin: 1em auto;
+}
+
 /* contact section */
 
 #section-contact {
