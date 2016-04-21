@@ -286,19 +286,24 @@ a,
 
   h1 {
     float: left;
-    transform: translateY(50%);
+    -webkit-transform: translateY(50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: translateY(50%); /* IE 9 */
+            transform: translateY(50%); /* IE 10, Fx 16+, Op 12.1+ */
   }
 
   .main-nav { float: right; }
+
   .profile-photo {
     box-sizing: content-box;
     transition-duration: .6s;
   }
 
   .profile-photo:hover {
-      transform: scale(1.25);
-      transition-duration: .6s;
-    }
+    -webkit-transform: scale(1.25); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: scale(1.25); /* IE 9 */
+            transform: scale(1.25); /* IE 10, Fx 16+, Op 12.1+ */
+    transition-duration: .6s;
+  }
 
 
 
