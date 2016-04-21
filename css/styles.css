@@ -1,0 +1,250 @@
+/* --- General Styles --- */
+
+* { box-sizing: border-box; }
+
+body {
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  font-size: .875em;
+  text-align: center;
+  color: #4a4a4a;
+  background-color: #fafafa;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img { max-width: 100%; }
+
+a  {
+  font-weight: bold;
+  text-decoration: none;
+  color: #4a4a4a;
+  transition: all .3s ease-in;
+}
+
+a:hover {
+  color: #3498db;
+  transition: all .3s ease-out;
+}
+
+section { margin-bottom: 75px; }
+
+
+
+/* --- Layout Styles --- */
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+  /* Main Header & Navigation */
+
+.main-header {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.main-nav li {
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+.main-nav a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.fa { margin-right: 10px; }
+
+h1,
+.section-title  { margin-top: 0; }
+
+a,
+.section-title { text-transform: uppercase; }
+
+.section-title  {
+  margin-bottom: 40px;
+  font-size: 1em;
+}
+
+.item-title { margin-top: 0; }
+
+#section-contact .section-title { margin-bottom: 0; }
+
+#section-contact p {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* about-me section */
+
+.profile-photo {
+  width: 80%;
+  max-width: 367px;
+  max-height: 225px;
+}
+
+/* portfolio section */
+
+.portfolio-item {
+  padding-top: 1em;
+  margin-bottom: 2em;
+}
+
+#section-portfolio i {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  margin-right: 0;
+}
+
+/* contact section */
+
+#section-contact {
+  max-width: 600px;
+  margin: 0 auto 75px;
+}
+
+.contact-info a { margin-left: 1em; }
+
+/* main-footer */
+
+.main-footer { border-top: solid 1px #e7e7e7; }
+
+.footer-name,
+.to-top { padding: 20px 15px; }
+
+.footer-name { float: left; }
+.to-top { float: right; }
+.footer-nav { display: none; }
+
+
+
+/* --- Media Query (min-width: 325) --- */
+
+
+
+/* --- Media Query (min-width: 768) [TABLETS] --- */
+
+@media (min-width: 768px) {
+
+  body { font-size: 1em; }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* Main Header & Navigation */
+
+  .main-nav li {
+    display: inline-block;
+    background-color: #fafafa;
+  }
+
+
+  /* About Me Section */
+
+  .profile-photo {
+    float: right;
+    padding-right: 0;
+    padding-left: 3em;
+  }
+  .about-me { text-align: left; }
+  .about-me p { max-width: 600px; }
+
+
+  /* Portfolio Section */
+
+  .portfolio-item {
+    width: 50%;
+    float: left;
+    transition: all .2s ease-in;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  /* --- Gallery hover effects --- */
+
+  .portfolio-item:hover {
+    color: #fff;
+    box-shadow: 0 0 3px #888888;
+    transition: all .2s ease-out;
+  }
+
+  .portfolio-item.marketing:hover { background-color: #36acd0; }
+  .portfolio-item.search:hover    { background-color: #e0ab26; }
+  .portfolio-item.travel:hover    { background-color: #2472aa; }
+  .portfolio-item.spots:hover     { background-color: #52bab4; }
+  .portfolio-item.p-gallery:hover { background-color: #675a85; }
+  .portfolio-item.calc:hover      { background-color: #626f7e; }
+  .portfolio-item.video:hover     { background-color: #36acd0; }
+  .portfolio-item.note:hover      { background-color: #903c53; }
+  .portfolio-item.youtube:hover   { background-color: #36acd0; }
+
+  .portfolio-item:nth-of-type(odd)  {
+    clear: left; /* clear left of odd items so we don't get spacing issues with paragraphs. */
+  }
+
+
+  /* Main Footer Section */
+
+  .to-top { display: none; }
+
+  .footer-nav {
+    display: inline-block;
+    float: right;
+  }
+
+  .footer-nav ul { margin: 0; }
+  .footer-nav li { display: inline-block; }
+
+  .footer-nav ul,
+  .footer-nav a { padding: 20px 15px; }
+
+}
+
+
+/* --- Media Query (min-width: 1024) [DESKTOPS/LARGE] --- */
+
+@media (min-width: 1024px) {
+
+  /* Main Header & Navigation */
+
+  h1 {
+    float: left;
+    transform: translateY(25%);
+  }
+
+  .main-nav { float: right; }
+  .profile-photo { box-sizing: content-box; }
+
+
+  /* Portfolio Section */
+
+  .portfolio-item {
+    width: 33%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .portfolio-item:nth-of-type(odd) { clear: none; }
+  .portfolio-item:nth-of-type(3n + 1) { clear: left; }
+
+}
+
+
+
+/* --- Clearfix --- */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
