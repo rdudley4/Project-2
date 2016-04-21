@@ -110,7 +110,7 @@ a,
 
 .skill-container {
   display: inline-block;
-  width: 45%;
+  width: 30%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -153,10 +153,9 @@ a,
 /* --- Media Query (min-width: 400) --- */
 
 @media (min-width: 400px) {
-  .skill-container {
-    padding: 2.5% 8%;
-    width: inherit;
-  }
+
+  .skill-container { padding: 2.5% 8%; }
+
 }
 
 
@@ -188,14 +187,17 @@ a,
     margin-left: 3em;
   }
 
-  .about-me {
+  .about-me,
+  #section-skills {
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
   }
 
-  .about-me p { max-width: 600px; }
+  .about-me p {
+    max-width: 600px;
+    text-align: left;
+  }
 
 
   /* Portfolio Section */
