@@ -33,6 +33,11 @@ a:hover {
 
 section { margin-bottom: 75px; }
 
+h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
 
 
 /* --- Layout Styles --- */
@@ -227,8 +232,6 @@ a,
   h1 {
     float: left;
     transform: translateY(50%);
-    font-size: 1.5em;
-    text-transform: uppercase;
   }
 
   .main-nav { float: right; }
