@@ -176,7 +176,7 @@ a,
     float: right;
     padding-right: 0;
     margin-left: 3em;
-}
+  }
 
   .about-me {
     max-width: 1050px;
@@ -193,7 +193,6 @@ a,
   .portfolio-item {
     width: 50%;
     float: left;
-    transition: all .2s ease-in;
     padding-top: 1em;
     padding-right: 1em;
     padding-left: 1em;
@@ -201,11 +200,14 @@ a,
 
   /* --- Gallery hover effects --- */
 
+  .skill-container,
+  .portfolio-item { transition: all .25s ease-in; }
+
   .portfolio-item:hover,
   .skill-container:hover {
     color: #fff;
     box-shadow: 0 0 3px #888888;
-    transition: all .2s ease-out;
+    transition: all .25s ease-out;
   }
 
   .portfolio-item.marketing:hover { background-color: #36acd0; }
@@ -259,7 +261,16 @@ a,
   }
 
   .main-nav { float: right; }
-  .profile-photo { box-sizing: content-box; }
+  .profile-photo {
+    box-sizing: content-box;
+    transition-duration: .6s;
+  }
+
+  .profile-photo:hover {
+      transform: scale(1.25);
+      transition-duration: .6s;
+    }
+
 
 
   /* Portfolio Section */
