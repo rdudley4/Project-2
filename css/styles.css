@@ -52,6 +52,10 @@ h1 {
   padding-right: 1em;
 }
 
+/* :D */
+.pogchamp { opacity: 0; }
+.pogchamp:hover { opacity: 1; }
+
 /* Main Header & Navigation */
 
 .main-header {
