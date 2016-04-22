@@ -214,6 +214,11 @@ a,
     margin-right: auto;
   }
 
+  .about-me {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   .about-me p {
     max-width: 600px;
     text-align: left;
@@ -291,6 +296,7 @@ a,
 
   h1 {
     float: left;
+    padding-left: 1rem;
     -webkit-transform: translateY(50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
         -ms-transform: translateY(50%); /* IE 9 */
             transform: translateY(50%); /* IE 10, Fx 16+, Op 12.1+ */
@@ -311,6 +317,8 @@ a,
             transform: scale(1.25); /* IE 10, Fx 16+, Op 12.1+ */
     transition-duration: .6s;
   }
+
+  .about-me p { line-height: 2.25; }
 
   /* Portfolio Section */
 
