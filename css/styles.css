@@ -30,7 +30,8 @@ a  {
   transition: all .3s ease-in;
 }
 
-a:visited { border: none; }
+a:visited,
+a:focus { outline: 0; }
 
 a:hover {
   color: #27ae60;
